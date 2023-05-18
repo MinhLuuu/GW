@@ -1,6 +1,6 @@
 const http = require('http')
 const host ='localhost'
-const port = process.env.Port || 3001
+var port = process.env.Port || 3001
 const fs = require('fs') //fs : file system
 const { error } = require('console')
 const server = http.createServer((req, res) => {
@@ -56,6 +56,4 @@ const server = http.createServer((req, res) => {
             })
     }
 })
-server.listen(port,()=>{
-    console.log("Web" + host + ":" + port)
-})
+ex4.listen(port)
